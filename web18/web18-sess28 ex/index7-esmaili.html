@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt{
+            color: gray;
+            background-color: gainsboro;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li onclick="para(event)">menu1</li>
+        <li onclick="para(event)">menu2</li>
+        <li onclick="para(event)">menu3</li>
+        <li onclick="para(event)">menu4</li>
+        <li onclick="para(event)">menu5</li>
+        <li onclick="para(event)">menu6</li>
+        <li onclick="para(event)">menu7</li>
+    </ul>
+
+
+
+    <script>
+        const li = document.querySelectorAll('ul>li')
+        function para(e){
+            for( let i = 0 ; i < li.length ; i++){
+                li[i].classList.remove('txt')
+            }
+            e.target.classList.add('txt')
+        }
+    </script>
+</body>
+</html>

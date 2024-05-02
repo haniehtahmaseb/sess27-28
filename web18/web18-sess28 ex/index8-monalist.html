@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .txt{
+            background-color: black;
+            color: white;
+        }
+        ul{
+            width: 60%;
+            height: 50px;
+            display: flex;
+            border: 1px solid black;
+            margin: 100px auto;
+            >li{
+                list-style-type: none;
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                border: 1px solid black;
+                text-transform: capitalize;
+                cursor: pointer;
+                transition: 0.4s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li onclick="myClick(this)">home</li>
+        <li onclick="myClick(this)">gallery</li>
+        <li onclick="myClick(this)">contact</li>
+        <li onclick="myClick(this)">privacy</li>
+        <li onclick="myClick(this)">gifts</li>
+    </ul>
+
+
+
+    <script>
+        const li = document.querySelectorAll('ul>li')
+        function myClick(s){
+            for(let i = 0 ; i < li.length ; i++){
+                li[i].classList.remove('txt')
+            }
+            s.classList.add('txt')
+        }
+    </script>
+</body>
+</html>

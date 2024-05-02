@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="enter your height">
+    <input type="text" name="" id="inp2" placeholder="enter your weight">
+    <button onclick="bmiChecker()">bmi check</button>
+    <h1 id="bmi"></h1>
+
+    <script>
+        const inp1 = document.getElementById('inp1')
+        const inp2 = document.getElementById('inp2')
+        const bmi = document.getElementById('bmi')
+
+        function bmiChecker(){
+            let h = inp1.value
+            let w = inp2.value
+            let txt = ''
+            h -= 100
+
+            if(w > h){
+                txt = 'you are Fat'
+            }else if(w == h){
+                txt = 'you are normal'
+            }else{
+                txt = 'you are Thin'
+            }
+            bmi.innerHTML = txt
+        }
+
+    </script>
+</body>
+</html>

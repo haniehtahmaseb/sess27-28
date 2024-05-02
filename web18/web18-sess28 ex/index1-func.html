@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt{
+            font-size: 50px;
+            color: red;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li onclick="para(this)">menu1</li>
+        <li onclick="para(this)">menu2</li>
+        <li onclick="para(this)">menu3</li>
+        <li onclick="para(this)">menu4</li>
+        <li onclick="para(this)">menu5</li>
+        <li onclick="para(this)">menu6</li>
+        <li onclick="para(this)">menu7</li>
+    </ul>
+
+
+    <script>
+        function para(b){
+            console.log(b);
+            b.classList.add('txt')
+        }
+    </script>
+</body>
+</html>

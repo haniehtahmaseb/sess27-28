@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            background-color: red;
+            color: gray;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">Lorem ipsum dolor sit amet.</p>
+    <h1 id="txt" class="center">jucci</h1>
+
+
+    <script>
+        document.getElementById('txt').setAttribute('title' , 'boss')
+        // document.getElementById('txt').setAttribute('class' , 'para')
+        // document.getElementById('txt').getAttribute('class')
+        // document.getElementById('txt').removeAttribute('class')
+        document.getElementById('txt').classList.add('para')
+        document.getElementById('txt').classList.remove('center')
+    </script>
+</body>    
+</html>
